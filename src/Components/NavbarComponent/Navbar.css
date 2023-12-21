@@ -1,0 +1,3 @@
+.nav-link{
+    @apply rounded-md px-2;
+}

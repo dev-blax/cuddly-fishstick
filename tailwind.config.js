@@ -7,6 +7,10 @@ module.exports = withMT({
   ],
   theme: {
     extend: {},
+    colors: {
+      'dtbi-orange': '#f9a72b',
+      'dtbi-blue': '#161d4c'
+    },
   },
   plugins: [],
 });
