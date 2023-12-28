@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn {
+  @apply px-4 py-2 rounded-lg hover:bg-dtbi-blue hover:text-white ;
+}
+
+
+
+body {
+  font-family: "Poppins", sans-serif;
+}

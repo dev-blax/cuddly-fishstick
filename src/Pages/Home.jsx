@@ -1,29 +1,26 @@
-import { HeroComponent } from "../Components/HeroComponent";
-import IncubationStagesAndServices from "../Components/IncubationStagesAndServices";
-import { NavbarComponent } from "../Components/NavbarComponent/NavbarComponent";
+import { NavigationMega } from "../Components/Navigation/NavigationMega";
+import Partners from "../Components/Partners/Partners";
+import FooterComponent from "./About/components/FooterComponent";
+import Hero from "./About/components/Hero";
+import Milestone from "./About/components/Milestone";
+import Service from "./About/components/Service";
+import Strategy from "./About/components/Strategy";
 
 export default function Home() {
   return (
     <div>
-      <NavbarComponent />
+      <NavigationMega />
+      <Hero />
 
-      <HeroComponent />
+      <Service />
 
-      <div className=" flex lg:max-w-6xl mx-auto my-5 ">
-        <div className=" w-1/2 ">
-          <img src="public/images/incubation_service.jpg" alt="" />
-        </div>
+      <Milestone />
 
-        <div>
-          <IncubationStagesAndServices />
-        </div>
-      </div>
+      <Strategy />
 
-      {/* <div className=" lg:max-w-6xl mx-auto my-5 ">
-      <MilestonesComponent />
-      </div> */}
+      <Partners />
 
-
+      <FooterComponent />
 
     </div>
   );

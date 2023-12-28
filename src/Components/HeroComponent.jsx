@@ -2,7 +2,7 @@ import { Carousel, Typography, Button } from "@material-tailwind/react";
  
 export function HeroComponent() {
   return (
-    <Carousel className=" rounded-xl ">
+    <Carousel className=" rounded-xl lg:max-h-96 lg:max-w-6xl mx-auto overflow-hidden ">
       <div className="relative h-full w-full">
         <img
           src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
