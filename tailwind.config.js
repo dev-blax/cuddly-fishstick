@@ -11,7 +11,11 @@ module.exports = withMT({
     extend: {},
     colors: {
       'dtbi-orange': '#f9a72b',
+      'ligth-dtbi-blue': '#252f73',
       'dtbi-blue': '#161d4c'
+    },
+    fontFamily: {
+      sans: ["Poppins", "sans-serif"],
     },
   },
   plugins: [

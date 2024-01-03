@@ -12,10 +12,21 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import {
   Bars4Icon,
   SquaresPlusIcon,
-  UserGroupIcon, CakeIcon
+  UserGroupIcon,
+  CakeIcon,
 } from "@heroicons/react/24/solid";
 import NavlistMenuComponent from "./NavlistMenuComponent";
 import { Link } from "react-router-dom";
+import { GiOfficeChair } from "react-icons/gi";
+import { FaHandsHelping } from "react-icons/fa";
+import { PiShareNetworkFill } from "react-icons/pi";
+import { CiShop } from "react-icons/ci";
+import { TbPigMoney } from "react-icons/tb";
+import { LuCommand } from "react-icons/lu";
+import { LiaDotCircle } from "react-icons/lia";
+import { AiFillYoutube } from "react-icons/ai";
+import { GrGallery } from "react-icons/gr";
+import { PiDiceThreeLight } from "react-icons/pi";
 
 const incubationMenuItems = [
   {
@@ -40,13 +51,13 @@ const incubationMenuItems = [
     title: "Current Startups",
     description: "Find the perfect solution for your needs.",
     icon: CakeIcon,
-    href: "/incubation/startups/current",
+    href: "/startups/current",
   },
   {
     title: "Graduated Startups",
     description: "Find the perfect solution for your needs.",
     icon: Bars4Icon,
-    href: "/incubation/startups/graduates",
+    href: "/startups/graduates",
   },
   {
     title: "Apply Fursa Lab Program",
@@ -60,99 +71,118 @@ const servicesMenuItems = [
   {
     title: "Shared Space",
     description: "Incubation Stages",
-    icon: SquaresPlusIcon,
-    href: "/incubation/overview",
+    icon: GiOfficeChair,
+    href: "/shared-space",
   },
   {
     title: "Coaching and Mentorship Programs",
     description: "Incubation Stages",
-    icon: SquaresPlusIcon,
+    icon: FaHandsHelping,
     href: "/incubation/overview",
   },
   {
-    title: "Mentorship Programs",
+    title: "Network Opportunities",
+    description: "Incubation Stages",
+    icon: PiShareNetworkFill,
+    href: "/incubation/overview",
+  },
+  {
+    title: "Market Linkages",
+    description: "Incubation Stages",
+    icon: CiShop,
+    href: "/incubation/overview",
+  },
+  {
+    title: "Financial Management Program",
+    description: "Incubation Stages",
+    icon: TbPigMoney,
+    href: "/incubation/overview",
+  },
+  {
+    title: "Apply Incubation Program",
+    description: "Incubation Stages",
+    icon: LuCommand,
+    href: "/application",
+  },
+];
+
+const aboutMenuItems = [
+  {
+    title: "About DTBi",
+    description: "Incubation Stages",
+    icon: LiaDotCircle,
+    href: "/about",
+  },
+  {
+    title: "Founders Overview",
+    description: "Incubation Stages",
+    icon: LiaDotCircle,
+    href: "/founders",
+  },
+  {
+    title: "DTBI Board",
+    description: "Incubation Stages",
+    icon: LiaDotCircle,
+    href: "/board",
+  },
+  {
+    title: "DTBi Management",
+    description: "Incubation Stages",
+    icon: LiaDotCircle,
+    href: "/management",
+  },
+];
+
+const eventsMenuItems = [
+  {
+    title: "Upcoming events",
+    description: "Incubation Stages",
+    icon: PiDiceThreeLight,
+    href: "/incubation/overview",
+  },
+  {
+    title: "Gallery",
+    description: "Incubation Stages",
+    icon: GrGallery,
+    href: "/incubation/overview",
+  },
+  {
+    title: "Youtube",
+    description: "Incubation Stages",
+    icon: AiFillYoutube,
+    href: "/incubation/overview",
+  },
+];
+
+const ProjectsMenuItems = [
+  {
+    title: "Ongoing Projects",
     description: "Incubation Stages",
     icon: SquaresPlusIcon,
     href: "/incubation/overview",
   },
   {
-    title: "Training Programs",
+    title: "Completed Projects",
     description: "Incubation Stages",
     icon: SquaresPlusIcon,
     href: "/incubation/overview",
   },
 ];
 
-const aboutMenuItems = [
-    {
-      title: "About DTBi",
-      description: "Incubation Stages",
-      icon: SquaresPlusIcon,
-      href: "/incubation/overview",
-    },
-    {
-      title: "Founders Overview",
-      description: "Incubation Stages",
-      icon: SquaresPlusIcon,
-      href: "/founders",
-    },
-    {
-      title: "DTBI Board",
-      description: "Incubation Stages",
-      icon: SquaresPlusIcon,
-      href: "/board",
-    },
-    {
-      title: "DTBi Management",
-      description: "Incubation Stages",
-      icon: SquaresPlusIcon,
-      href: "/management",
-    },
-  ];
-
-const eventsMenuItems = [
-    {
-      title: "Upcoming events",
-      description: "Incubation Stages",
-      icon: SquaresPlusIcon,
-      href: "/incubation/overview",
-    },
-    {
-      title: "Gallery",
-      description: "Incubation Stages",
-      icon: SquaresPlusIcon,
-      href: "/incubation/overview",
-    },
-    {
-      title: "Youtube",
-      description: "Incubation Stages",
-      icon: SquaresPlusIcon,
-      href: "/incubation/overview",
-    },
-    
-  ];
-
-  const ProjectsMenuItems = [
-    {
-      title: "Ongoing Projects",
-      description: "Incubation Stages",
-      icon: SquaresPlusIcon,
-      href: "/incubation/overview",
-    },
-    {
-      title: "Completed Projects",
-      description: "Incubation Stages",
-      icon: SquaresPlusIcon,
-      href: "/incubation/overview",
-    },
-   
-  ];
-
-
-
 function NavList() {
   return (
     <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1 ">
+      <Typography
+        as="a"
+        href=""
+        variant="small"
+        color="blue-gray"
+        className="font-medium"
+      >
+        <ListItem className="flex items-center gap-2 py-2 pr-4 text-white">
+          <Link to={"/"}> Home </Link>
+        </ListItem>
+      </Typography>
       <NavlistMenuComponent
         label="Incubation"
         menuItems={incubationMenuItems}
@@ -172,7 +202,7 @@ function NavList() {
         className="font-medium"
       >
         <ListItem className="flex items-center gap-2 py-2 pr-4 text-white">
-          <Link> Contact Us </Link>
+          <Link to={"/contact"}> Contact Us </Link>
         </ListItem>
       </Typography>
     </List>

@@ -21,24 +21,23 @@ function NavlistMenuComponent({ menuItems, label }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const renderItems = menuItems.map(({ icon: Icon, title, description, href }, key) => (
-    <Link href={href} key={key} >
+    <Link to={href} key={key} >
       <MenuItem className="flex items-center gap-3 rounded-lg">
         <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2">
           {Icon && (
-            <Icon strokeWidth={2} className="h-6 text-gray-900 w-6" />
+            <Icon strokeWidth={1} className="h-6 text-dtbi-orange w-6" />
           )}
         </div>
         <div>
           <Typography
             variant="h6"
-            color="blue-gray"
-            className="flex items-center text-sm font-bold"
+            className="flex items-center text-sm font-bold text-white md:text-gray-700  "
           >
             {title}
           </Typography>
           <Typography
             variant="paragraph"
-            className="text-xs !font-medium text-blue-gray-500"
+            className="text-xs !font-medium text-gray-200 md:text-blue-gray-500"
           >
             {description}
           </Typography>

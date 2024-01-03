@@ -5,7 +5,9 @@ export default function Hero() {
   return (
     <div className=" flex flex-col-reverse md:flex-row justify-between items-center lg:max-w-7xl mx-auto ">
       <div className=" w-full px-5 flex flex-col ">
-        <p className=" text-4xl md:text-7xl py-5  ">ICT based Business Incubator.</p>
+        <p className=" text-4xl md:text-7xl py-5  ">
+          ICT based Business Incubator.
+        </p>
         <p>
           Supporting Growth and Commercialization of Emerging Digital-Based
           Start-ups in Tanzania.
@@ -21,7 +23,7 @@ export default function Hero() {
           </Link>
         </div>
       </div>
-      <div className=" w-full">
+      <div className=" w-full py-10 ">
         <img
           className=" lg:max-w-[800px] "
           src="/images/graphic.png"

@@ -7,7 +7,7 @@ export default function FooterComponent() {
       <div className="  px-5  flex flex-col md:flex-row pb-5 md:pb-0 justify-between gap-3 max-w-7xl mx-auto ">
         <div className=" flex flex-col md:w-1/4  ">
           <div className=" my-3">
-            <img src="public\logo\logo.png" className=" h-10 " alt="" />
+            <img src="\logo\logo.png" className=" h-10 " alt="" />
           </div>
           <p className=" text-xs ">
             {" "}
@@ -54,7 +54,7 @@ export default function FooterComponent() {
           <ul>
             <li className=" my-3 ">
               {" "}
-              <a href="" className=" px-4 py-2 hover:bg-black/10 rounded-lg ">
+              <a href="" className=" px-4 py-2 hover:bg-red-500 hover:text-white rounded-lg ">
                 {" "}
                 FursaLab{" "}
               </a>{" "}

@@ -1,16 +1,16 @@
 import FooterComponent from "../About/components/FooterComponent";
-import IdeaForm from "./IdeaForm";
 import { GoLaw } from "react-icons/go";
 import { MdConnectWithoutContact } from "react-icons/md";
 import { HiMiniSquares2X2 } from "react-icons/hi2";
 import { NavigationMega } from "../../Components/Navigation/NavigationMega";
+import StartupForm from "./StartupForm";
 
-export default function IdeaApplication() {
+export default function StartupApplication() {
   return (
     <div>
       <NavigationMega />
 
-      <IdeaForm />
+      <StartupForm />
 
       <div className="bg-dtbi-blue text-white ">
         <div className=" py-10 my-10 max-w-7xl mx-auto px-5  ">
