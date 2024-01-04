@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-//import Home from "./Pages/Home";
 import About from "./Pages/About/About";
 import FoundersPage from "./Pages/Founders/FoundersPage";
 import BoardPage from "./Pages/Board/BoardPage";
@@ -11,6 +10,9 @@ import StartupApplication from "./Pages/Application/StartupApplication";
 import IncubationLayout from "./Pages/Incubation/IncubationLayout";
 import CurrentStartups from "./Pages/Startups/CurrentStartups";
 import GraduatedStartups from "./Pages/Startups/GraduatedStartups";
+import ApplyPage from "./Pages/Application/ApplyPage";
+import CompanyApplication from "./Pages/Application/CompanyApplication";
+
 export default function App() {
   return (
     <>
@@ -21,9 +23,9 @@ export default function App() {
         <Route path="/board" element={<BoardPage />} />
         <Route path="/management" element={<ManagementBoardComponent />} />
 
-        <Route path="/application" element={<IdeaApplication />} />
-
-        <Route path="/company-application" element={<StartupApplication />} />
+        <Route path="/apply" element={<ApplyPage />} />
+        <Route path="/idea-application" element={<IdeaApplication />} />
+        <Route path="/company-application" element={<CompanyApplication />} />
         <Route path="/startup-application" element={<StartupApplication />} />
 
         <Route path="/contact" element={<ContactPage />} />

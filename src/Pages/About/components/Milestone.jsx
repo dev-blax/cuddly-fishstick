@@ -1,58 +1,63 @@
 import { useState } from "react";
-import { BsFill1SquareFill } from "react-icons/bs";
 import "../About.css";
 
 export default function Milestone() {
   const [selectedCategory, setSelectedCategory] = useState("all");
-
   let basebtnClass = " btn ";
-
   const startups = [
     {
       name: "Sarufi Ai",
       category: "graduated",
+      logoUrl: "/images/startup-logos/sarufi.png",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi rem laudantium similique sed alias tenetur minus quaerat quibusdam perspiciatis ex.",
     },
     {
-      name: "Duka Smart",
+      name: "Smart Darasa",
       category: "current",
+      logoUrl: "/images/startup-logos/smartdarasa_logo.jpg",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi rem laudantium similique sed alias tenetur minus quaerat quibusdam perspiciatis ex.",
     },
     {
-      name: "Shule Direct",
+      name: "Azam Pay",
       category: "current",
+      logoUrl: "/images/startup-logos/azam-pay.png",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi rem laudantium similique sed alias tenetur minus quaerat quibusdam perspiciatis ex.",
     },
     {
-      name: "Sarufi Ai",
+      name: "Kiasi",
       category: "graduated",
+      logoUrl: "/images/startup-logos/kiasi.png",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi rem laudantium similique sed alias tenetur minus quaerat quibusdam perspiciatis ex.",
     },
     {
-      name: "Sarufi Ai",
+      name: "TUNZAA",
       category: "graduated",
+      logoUrl: "/images/startup-logos/tunzaa.png",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi rem laudantium similique sed alias tenetur minus quaerat quibusdam perspiciatis ex.",
     },
     {
-      name: "Sarufi Ai",
+      name: "SIDA",
       category: "current",
+      logoUrl: "/images/startup-logos/sida.png",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi rem laudantium similique sed alias tenetur minus quaerat quibusdam perspiciatis ex.",
     },
     {
-      name: "Sarufi Ai",
+      name: "Sahara Sparks",
       category: "current",
+      logoUrl: "/images/startup-logos/sahara-sparks.jpg",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi rem laudantium similique sed alias tenetur minus quaerat quibusdam perspiciatis ex.",
     },
     {
-      name: "Sarufi Ai",
+      name: "Dawa Mkononi",
       category: "current",
+      logoUrl: "/images/startup-logos/dawa-mkononi.svg",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi rem laudantium similique sed alias tenetur minus quaerat quibusdam perspiciatis ex.",
     },
@@ -106,7 +111,7 @@ export default function Milestone() {
             className=" cursor-pointer lg:w-1/5 module-border-wrap  rounded-2xl relative bg-gray-300 hover:bg-gradient-to-br from-dtbi-orange to-dtbi-blue p-[2px] "
           >
             <div className="  flex flex-col items-center justify-center aspect-square bg-gray-300 text-gray-900 p-4 rounded-2xl ">
-              <BsFill1SquareFill className=" my-3 text-3xl " />
+              <img src={startup.logoUrl} className=" h-10 my-3 rounded-lg " alt="" />
               <p className=" text-2xl "> {startup.name} </p>
               <p className=" text-xs font-light my-2 ">
                 {" "}

@@ -31,13 +31,13 @@ function NavlistMenuComponent({ menuItems, label }) {
         <div>
           <Typography
             variant="h6"
-            className="flex items-center text-sm font-bold text-white md:text-gray-700  "
+            className="flex items-center text-sm font-semibold text-white md:text-gray-700  "
           >
             {title}
           </Typography>
           <Typography
             variant="paragraph"
-            className="text-xs !font-medium text-gray-200 md:text-blue-gray-500"
+            className="text-xs font-light text-gray-200 md:text-blue-gray-500"
           >
             {description}
           </Typography>

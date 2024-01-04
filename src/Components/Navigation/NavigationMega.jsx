@@ -45,7 +45,7 @@ const incubationMenuItems = [
     title: "Apply for Incubation",
     description: "Find the perfect solution for your needs.",
     icon: Bars4Icon,
-    href: "/incubation/apply",
+    href: "/apply",
   },
   {
     title: "Current Startups",
@@ -102,7 +102,7 @@ const servicesMenuItems = [
     title: "Apply Incubation Program",
     description: "Incubation Stages",
     icon: LuCommand,
-    href: "/application",
+    href: "/apply",
   },
 ];
 
@@ -223,7 +223,8 @@ export function NavigationMega() {
     <div className=" bg-dtbi-orange ">
       <Navbar className="mx-auto max-w-7xl px-4 py-2 shadow-none bg-dtbi-orange border-none ">
         <div className="flex items-center justify-between text-blue-gray-900">
-          <img src="/logo/logo.png" className="h-6 md:h-8 " alt="" />
+          
+          <Link to={'/'} > <img src="/logo/logo.png" className="h-6 md:h-8 " alt="" /> </Link>
 
           <div className="hidden lg:block">
             <NavList />

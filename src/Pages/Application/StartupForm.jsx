@@ -9,7 +9,7 @@ export default function StartupForm() {
         <div className=" bg-dtbi-blue text-white p-5 ">
           <header className=" text-center capitalize  md:text-2xl">
             {" "}
-            Apply for Company Stage{" "}
+            Apply for Startup Stage{" "}
           </header>
         </div>
 
