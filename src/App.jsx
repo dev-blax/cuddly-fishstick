@@ -12,6 +12,11 @@ import CurrentStartups from "./Pages/Startups/CurrentStartups";
 import GraduatedStartups from "./Pages/Startups/GraduatedStartups";
 import ApplyPage from "./Pages/Application/ApplyPage";
 import CompanyApplication from "./Pages/Application/CompanyApplication";
+import AdminHome from "./Pages/Admin/AdminHome";
+import AdminLogin from "./Pages/Admin/AdminLogin";
+import AdminSignup from "./Pages/Admin/AdminSignup";
+import AdminDashboard from "./Pages/Admin/AdminDashboard";
+import { AdminEditor } from "./Pages/Admin/AdminEditor";
 
 export default function App() {
   return (
@@ -34,6 +39,18 @@ export default function App() {
 
         <Route path="/startups/current" element={<CurrentStartups />} />
         <Route path="/startups/graduates" element={<GraduatedStartups />} />
+
+
+        {/* admin */}
+        <Route path="/admin/login" element={<AdminLogin />} />
+        <Route path="/admin/signup" element={<AdminSignup />} />
+        <Route path="/admin" element={<AdminHome />}>
+
+          {/* admin sub-routes */}
+          <Route path="" element={<AdminDashboard />} />
+          <Route path="editor" element={<AdminEditor />} />
+          <Route path="dashboard" element={<AdminDashboard />} />
+        </Route>
         
       </Routes>
     </>

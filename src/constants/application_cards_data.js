@@ -11,13 +11,14 @@ export const applicationCardData = [
     description:
       "What Is a Startup? The term startup refers to a company in the first stages of operations. Startups are founded by one or more entrepreneurs who want to develop a product or service for which they believe there is demand.",
     imageString: "/images/apply/startup.jpg",
-    href:'/company-application'
+    
+    href:'/startup-application'
   },
   {
     label: "APPLY FOR COMPANY STAGE",
     description:
       "A company is a body corporate or an incorporated business organization registered under the companies act. A company may be organized in various ways depending on the corporate law of its jurisdiction.",
     imageString: "/images/apply/company.jpg",
-    href:'/startup-application'
+    href:'/company-application',
   },
 ];

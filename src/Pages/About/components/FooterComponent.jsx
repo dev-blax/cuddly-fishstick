@@ -1,4 +1,4 @@
-import { BsTwitter, BsGitlab, BsInstagram } from "react-icons/bs";
+import { BsTwitter, BsInstagram, BsFacebook } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 export default function FooterComponent() {
@@ -20,28 +20,28 @@ export default function FooterComponent() {
           <ul>
             <li className=" my-3 ">
               {" "}
-              <a href="" className=" px-4 py-2 hover:bg-black/20 rounded-lg ">
+              <a href="/about" className=" px-4 py-2 hover:bg-black/20 rounded-lg ">
                 {" "}
                 About Dtbi{" "}
               </a>{" "}
             </li>
             <li className=" my-3 ">
               {" "}
-              <a href="" className=" px-4 py-2 hover:bg-black/20 rounded-lg ">
+              <a href="/board" className=" px-4 py-2 hover:bg-black/20 rounded-lg ">
                 {" "}
                 Our Board{" "}
               </a>{" "}
             </li>
             <li className=" my-3 ">
               {" "}
-              <a href="" className=" px-4 py-2 hover:bg-black/20 rounded-lg ">
+              <a href="/founders" className=" px-4 py-2 hover:bg-black/20 rounded-lg ">
                 {" "}
                 Our Founders{" "}
               </a>{" "}
             </li>
             <li className=" my-3 ">
               {" "}
-              <a href="" className=" px-4 py-2 hover:bg-black/20 rounded-lg ">
+              <a href="/management" className=" px-4 py-2 hover:bg-black/20 rounded-lg ">
                 {" "}
                 Our Management{" "}
               </a>{" "}
@@ -64,6 +64,14 @@ export default function FooterComponent() {
               <Link to={'https://ims-dtbi.web.app/'} href="" className=" px-4 py-2 hover:bg-black/10 rounded-lg ">
                 {" "}
                 DTBI iMS{" "}
+              </Link>{" "}
+            </li>
+
+            <li className=" my-3 ">
+              {" "}
+              <Link to={'/admin'} href="" className=" px-4 py-2 hover:bg-black/10 rounded-lg ">
+                {" "}
+                Administrator{" "}
               </Link>{" "}
             </li>
             
@@ -89,13 +97,13 @@ export default function FooterComponent() {
         <div className="max-w-7xl mx-auto py-3 flex flex-col md:flex-row gap-3 px-5 text-xs md:text-base justify-between ">
           <p> &copy; DTBi: All rules and regulations to be athered </p>
           <div className=" flex gap-3 ">
-            <a href="">
+            <Link to={'/about'}>
               {" "}
               <BsTwitter />{" "}
-            </a>
+            </Link>
             <a href="">
               {" "}
-              <BsGitlab />
+              <BsFacebook />
             </a>
             <a href="">
               <BsInstagram />

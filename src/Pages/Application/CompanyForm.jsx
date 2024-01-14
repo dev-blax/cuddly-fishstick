@@ -1,6 +1,6 @@
 import TextareaComponent from "../../Components/Textarea/TextareaComponent";
 import { Select, Option } from "@material-tailwind/react";
-import { Button, Input, Typography } from "@material-tailwind/react";
+import { Button, Input } from "@material-tailwind/react";
 
 export default function CompanyForm() {
   return (
@@ -16,7 +16,7 @@ export default function CompanyForm() {
         <div className=" flex flex-col gap-5 p-5">
           <header className=" font-semibold text-2xl text-dtbi-blue  ">
             {" "}
-            Startup Details{" "}
+            Company Details{" "}
           </header>
           <div className=" flex flex-col md:flex-row gap-5">
             <Input variant="outlined" label="Startup Name" />
@@ -60,25 +60,6 @@ export default function CompanyForm() {
           <div className=" flex flex-col md:flex-row gap-5">
             <div className=" w-full ">
               <Input type="number" label="Number of Employees" />
-
-              <Typography
-                color="yellow"
-                className=" text-dtbi-orange mt-2 flex items-center gap-1 font-normal text-xs "
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="-mt-px h-4 w-4"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm8.706-1.442c1.146-.573 2.437.463 2.126 1.706l-.709 2.836.042-.02a.75.75 0 01.67 1.34l-.04.022c-1.147.573-2.438-.463-2.127-1.706l.71-2.836-.042.02a.75.75 0 11-.671-1.34l.041-.022zM12 9a.75.75 0 100-1.5.75.75 0 000 1.5z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-                Excluding yourself
-              </Typography>
             </div>
             <Input variant="outlined" label="Postal Address" />
             <Input type="password" label="Street Name *" />
@@ -150,45 +131,48 @@ export default function CompanyForm() {
             </div>
           </div>
           <header className=" font-semibold text-2xl text-dtbi-blue  ">
-            Startup Information{" "}
+            Company Information{" "}
           </header>
 
           <div className=" flex flex-col md:flex-row gap-5 ">
             <TextareaComponent label="Product information *" />
-            <TextareaComponent label="What problem is your product/service solving?" />
+            <TextareaComponent label="What does your company do?" />
           </div>
           <div className=" flex flex-col md:flex-row gap-5 ">
+            <TextareaComponent label="What is your product/service and how does it work?" />
             <TextareaComponent label="Who is your target customer?" />
+          </div>
+          <div className=" flex flex-col md:flex-row gap-5 ">
             <TextareaComponent label="What is your business model?" />
-          </div>
-          <div className=" flex flex-col md:flex-row gap-5 ">
             <TextareaComponent label="What is unique and/or innovative with your business?" />
-            <TextareaComponent label="Who are your primary direct and indirect competitors as you view them? How do you differentiate yourself from your competitors?" />
           </div>
 
           <div className=" flex flex-col md:flex-row gap-5 ">
-            <TextareaComponent label="Traction and financials: Please describe the traction of your company has reached. Include the number of customer and/or users, market feedback, any pilots you have conducted, partnerships etc" />
-            <TextareaComponent label="Is your company pre or post revenue? Has it made any money? (Please explain)" />
+            <TextareaComponent label="How do you differentiate yourself from your competitors?" />
+            <TextareaComponent label="Share your company's traction, covering customer/user numbers, market feedback, conducted pilots, and partnerships." />
           </div>
 
           <div className=" flex flex-col md:flex-row gap-5 ">
-            <TextareaComponent label="Describe your fundraising. Include the type of capital (equity, loans, grants, awards), amount, reception month and year. What are your fundraising objectives in the future? How much are you seeking to raise?" />
-            <TextareaComponent label="Describe your targeted market and its associated characteristics. Include age, gender, career and life style in less than 200 words" />
+            <TextareaComponent label="Is your company pre or post-revenue? Provide details on its financial status and any revenue generated." />
+            <TextareaComponent label="Detail your fundraising history, specifying capital type, amount, reception date, and future fundraising goals." />
           </div>
 
           <div className=" flex flex-col md:flex-row gap-5 ">
-            <TextareaComponent label="Describe your exit strategy: How will you generate returns on capital for outside investors? Scale and impact" />
-            <TextareaComponent label="Describe your company’s national and international strategy and/or plans for expansion into new markets. Include any specific milestones or a broad overview" />
+            <TextareaComponent label="Define your target market, covering demographics such as age, gender, career, and lifestyle." />
+            <TextareaComponent label="Outline your exit strategy, emphasizing how you'll generate returns for investors through scale and impact." />
           </div>
 
           <div className=" flex flex-col md:flex-row gap-5 ">
-            <TextareaComponent label="Describe your impact. If your company is successful, how will the world be different? Please include metrics you are using to measure your impact." />
+            <TextareaComponent label="Detail your company's national and international expansion strategy, including key milestones or an overview." />
+            <TextareaComponent label="Detail the impact of your company's success and how it will change the world. Include metrics used to measure this impact." />
+          </div>
+
+          <div className=" flex flex-col md:flex-row gap-5 ">
             <TextareaComponent label="Team (Why are you thing you have a winning team?)" />
-          </div>
-
-          <div className=" flex flex-col md:flex-row gap-5 ">
             <TextareaComponent label="How is the spread of COVID-19 affecting your business? How is your team responding to mitigate the overreaching impacts of the pandemic to your business?" />
           </div>
+
+          
         </div> 
 
         <Button ripple={true} className=" bg-dtbi-orange m-5 ">

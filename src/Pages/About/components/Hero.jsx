@@ -14,7 +14,7 @@ export default function Hero() {
         </p>
         <div className="  ">
           <Link
-            to={"/application"}
+            to={"/apply"}
             className=" max-w-max bg-gray-900 text-white px-4 py-2 rounded-lg flex items-center gap-3 my-5  "
           >
             {" "}
@@ -26,7 +26,7 @@ export default function Hero() {
       <div className=" w-full py-10 ">
         <img
           className=" lg:max-w-[800px] "
-          src="/images/graphic.png"
+          src="/images/graphic2.png"
           alt="graphic"
         />
       </div>

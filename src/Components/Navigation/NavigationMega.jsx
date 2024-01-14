@@ -152,7 +152,7 @@ const eventsMenuItems = [
     icon: AiFillYoutube,
     href: "/incubation/overview",
   },
-];
+]; 
 
 const ProjectsMenuItems = [
   {
@@ -172,13 +172,7 @@ const ProjectsMenuItems = [
 function NavList() {
   return (
     <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1 ">
-      <Typography
-        as="a"
-        href=""
-        variant="small"
-        color="blue-gray"
-        className="font-medium"
-      >
+      <Typography variant="small" color="blue-gray" className="font-medium">
         <ListItem className="flex items-center gap-2 py-2 pr-4 text-white">
           <Link to={"/"}> Home </Link>
         </ListItem>
@@ -194,13 +188,7 @@ function NavList() {
         menuItems={eventsMenuItems}
       />
       <NavlistMenuComponent label="Projects" menuItems={ProjectsMenuItems} />
-      <Typography
-        as="a"
-        href="#"
-        variant="small"
-        color="blue-gray"
-        className="font-medium"
-      >
+      <Typography variant="small" color="blue-gray" className="font-medium">
         <ListItem className="flex items-center gap-2 py-2 pr-4 text-white">
           <Link to={"/contact"}> Contact Us </Link>
         </ListItem>
@@ -223,16 +211,15 @@ export function NavigationMega() {
     <div className=" bg-dtbi-orange ">
       <Navbar className="mx-auto max-w-7xl px-4 py-2 shadow-none bg-dtbi-orange border-none ">
         <div className="flex items-center justify-between text-blue-gray-900">
-          
-          <Link to={'/'} > <img src="/logo/logo.png" className="h-6 md:h-8 " alt="" /> </Link>
+          <Link to={"/"}>
+            {" "}
+            <img src="/logo/logo.png" className="h-6 md:h-8 " alt="" />{" "}
+          </Link>
 
           <div className="hidden lg:block">
             <NavList />
           </div>
           <div className="hidden gap-2 lg:flex">
-            {/* <Button variant="text" size="sm" color="blue-gray">
-              Log In
-            </Button> */}
             <Button variant="gradient" size="sm" color="red">
               Fursa Lab
             </Button>

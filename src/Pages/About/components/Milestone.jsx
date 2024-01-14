@@ -14,7 +14,7 @@ export default function Milestone() {
     },
     {
       name: "Smart Darasa",
-      category: "current",
+      category: "graduated",
       logoUrl: "/images/startup-logos/smartdarasa_logo.jpg",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi rem laudantium similique sed alias tenetur minus quaerat quibusdam perspiciatis ex.",
